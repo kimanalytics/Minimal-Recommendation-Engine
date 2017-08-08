@@ -45,19 +45,3 @@ the highest estimated rating(s).* -- Adomavicius and Tuzhilin, 2005
 - *Driven by computer algorithms, recommenders help consumers
 by selecting products they will probably like and might buy
 based on their browsing, searches, purchases, and preferences.* -- Konstan and Riedl, 2012
-
-### Notation
-
-- $U$ is the set of users in our domain. Its size is $|U|$.
-- $I$ is the set of items in our domain. Its size is $|I|$.
-- $I(u)$ is the set of items that user $u$ has rated.
-- $-I(u)$ is the complement of $I(u)$ i.e., the set of items not yet seen by user $u$.
-- $U(i)$ is the set of users that have rated item $i$.
-- $-U(i)$ is the complement of $U(i)$.
-- $S(u,i)$ is a function that measures the utility of item $i$ for user $u$.
-
-### Goal of a recommendation system
-
-$
-i^{*} = argmax_{i \in -I(u)} S(u,i), \forall{u \in U}
-$
